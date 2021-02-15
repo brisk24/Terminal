@@ -1,0 +1,4 @@
+Random rnd = new Random();
+    IEnumerable<int> numbers = Enumerable.Range(0, 100).OrderBy(r => rnd.Next());
+    foreach(var num in numbers)
+      Console.Write($"{num} ");
