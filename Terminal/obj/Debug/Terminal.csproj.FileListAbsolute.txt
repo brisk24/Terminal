@@ -42,3 +42,5 @@ I:\ЦОПП\Terminal\Terminal\obj\Debug\Terminal.pdb
 I:\ЦОПП\Terminal\Terminal\bin\Debug\Terminal.exe.config
 I:\ЦОПП\Terminal\Terminal\bin\Debug\Terminal.exe
 I:\ЦОПП\Terminal\Terminal\bin\Debug\Terminal.pdb
+D:\Dowlaund\Laba\Terminal\Terminal\obj\Debug\Interop.WMPLib.dll
+D:\Dowlaund\Laba\Terminal\Terminal\obj\Debug\Terminal.csproj.ResolveComReference.cache

@@ -18,11 +18,6 @@ namespace Test
    
     public partial class Form1 : Form
     {
-        enum Status
-        {
-            Main,
-            Gallery
-        }
 
         /// <summary>
         /// Промежуток времени между фотографиями
@@ -156,11 +151,25 @@ namespace Test
             pictureBox.Location = new Point(0, 600);
             pictureBox.Size = new System.Drawing.Size(1080, 725);          
             Controls.Add(pictureBox);
+            pictureBox.MouseDown += ClickPicture;
+            pictureBox.MouseUp += MouseUpPicture;
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             gallery = new Gallery("Photo", pictureBox);
             timer1.Enabled = true;
             timer1.Interval = timeBetweenfoto;
         }
+
+        private void MouseUpPicture(object sender, MouseEventArgs e)
+        {
+            gallery.PushAndMove(MousePosition.X);
+            gallery.Show();
+        }
+
+        private void ClickPicture(object sender, MouseEventArgs e)
+        {
+            gallery.ClickImage(MousePosition.X);
+        }
+
         public void PlaySound(string sound)
         {
             mediaPlayer = new MediaPlayer();
