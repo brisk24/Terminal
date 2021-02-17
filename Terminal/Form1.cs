@@ -33,6 +33,8 @@ namespace Test
         public PictureBox pictureBox;
         Gallery gallery;
         MediaPlayer mediaPlayer;
+        int id;
+        string[] SchedulePatch;
 
         #region Параметры объектов(позиция, размеры)
         string[] SizeMainLink = new string[] { "573 96", "573 100", "575 100", "575 100", "386 386", "386 386" };
@@ -62,6 +64,7 @@ namespace Test
 
         private void MainScreen()
         {
+            Weather();
             timerInfo.Enabled = true;
             this.BackgroundImage = Image.FromFile("Image\\ScreenMain.png");
             for (int i = 0; i < LinkMainForm.Length; i++)
@@ -113,7 +116,9 @@ namespace Test
         }
         private void ScheduleScreen()
         {
-            this.BackgroundImage = Image.FromFile("Image\\ScreenSchedule.png");
+            SchedulePatch = System.IO.Directory.GetFiles("Image\\Schedule");
+            id = 0;
+            this.BackgroundImage = Image.FromFile(SchedulePatch[id]);
             for (int i = 0; i < LinkSchedule.Length; i++)
             {
                 LinkSchedule[i] = new Label();
@@ -127,7 +132,22 @@ namespace Test
             }
             LinkSchedule[0].MouseClick += BackArrowScheduleClick;
             LinkSchedule[1].MouseClick += BackArrowScheduleClick;
+            LinkSchedule[2].MouseClick += LeftArrowDownClik;
+            LinkSchedule[3].MouseClick += RightArrowDownClick;
         }
+
+        private void RightArrowDownClick(object sender, MouseEventArgs e)
+        {
+            if(id < SchedulePatch.Length-1)
+                this.BackgroundImage = Image.FromFile(SchedulePatch[++id]);
+        }
+
+        private void LeftArrowDownClik(object sender, MouseEventArgs e)
+        {
+            if (id > 0)
+                this.BackgroundImage = Image.FromFile(SchedulePatch[--id]);
+        }
+
         private void GalleryScreen()
         {
             this.BackgroundImage = Image.FromFile("Image\\ScreenGallery.png");

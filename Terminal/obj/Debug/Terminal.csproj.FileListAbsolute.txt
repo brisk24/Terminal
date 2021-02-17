@@ -44,3 +44,15 @@ I:\ЦОПП\Terminal\Terminal\bin\Debug\Terminal.exe
 I:\ЦОПП\Terminal\Terminal\bin\Debug\Terminal.pdb
 D:\Dowlaund\Laba\Terminal\Terminal\obj\Debug\Interop.WMPLib.dll
 D:\Dowlaund\Laba\Terminal\Terminal\obj\Debug\Terminal.csproj.ResolveComReference.cache
+E:\Terminal\Terminal\bin\Debug\Terminal.exe.config
+E:\Terminal\Terminal\bin\Debug\Terminal.exe
+E:\Terminal\Terminal\bin\Debug\Terminal.pdb
+E:\Terminal\Terminal\obj\Debug\Terminal.csprojAssemblyReference.cache
+E:\Terminal\Terminal\obj\Debug\Interop.WMPLib.dll
+E:\Terminal\Terminal\obj\Debug\Terminal.csproj.ResolveComReference.cache
+E:\Terminal\Terminal\obj\Debug\Test.Form1.resources
+E:\Terminal\Terminal\obj\Debug\Terminal.Properties.Resources.resources
+E:\Terminal\Terminal\obj\Debug\Terminal.csproj.GenerateResource.cache
+E:\Terminal\Terminal\obj\Debug\Terminal.csproj.CoreCompileInputs.cache
+E:\Terminal\Terminal\obj\Debug\Terminal.exe
+E:\Terminal\Terminal\obj\Debug\Terminal.pdb

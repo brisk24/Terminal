@@ -44,7 +44,7 @@ namespace Test
         {
             if (OldX < X - 20)
             {
-                if (id < AllFiles.Length - 1)
+                if (id < AllFiles.Length-1)
                     Pic.Image = Image.FromFile(RandomFiles[++id]);
             }
             else if (OldX > X + 20)
@@ -59,7 +59,7 @@ namespace Test
         {
             Random rnd = new Random();
             IEnumerable<int> numbers = Enumerable.Range(0, AllFiles.Length).OrderBy(r => rnd.Next());
-            for (int i = 0; i < AllFiles.Length-1; i++)
+            for (int i = 0; i < AllFiles.Length; i++)
             {
                 int n = numbers.ToArray()[i];
                 RandomFiles[i] = AllFiles[n];
@@ -68,7 +68,7 @@ namespace Test
 
         public void PhotoShowRight()
         {
-            if (id < RandomFiles.Length - 1)
+            if (id < RandomFiles.Length-1)
                 Pic.Image = Image.FromFile(RandomFiles[++id]);
             else
                 id = 0;
